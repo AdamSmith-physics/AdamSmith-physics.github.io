@@ -11,8 +11,8 @@
 
             {%- if site.email -%}
             <li>Email: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            <li>ORCID: <a class="ORCID" href="http://orcid.org/{{ site.ORCID }}">{{ site.ORCID }}</a></li>
-            <li><a class="scholar" href="{{ site.scholar }}">Google Scholar</a></li>
+            <li>ORCID: <a class="ORCID" href="http://orcid.org/{{ site.ORCID }}" target='blank'>{{ site.ORCID }}</a></li>
+            <li><a class="scholar" href="{{ site.scholar }}" target='blank'>Google Scholar</a></li>
             {%- endif -%}
         </ul>
       </div>
