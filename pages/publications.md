@@ -4,6 +4,9 @@ title: Publications
 permalink: /publications/
 ---
 
+The most up to date list of my publications including preprints can be found on my author's profile on [arXiv](https://arxiv.org/a/smith_a_7.html). You can also find them on [Google Scholar](https://scholar.google.co.uk/citations?user=0sCuBC4AAAAJ&hl=en).<br/>
+My ORCID is [0000-0002-6744-4592](http://orcid.org/0000-0002-6744-4592).
+
 <li>
 <b>Dynamical Localization in Z2 Lattice Gauge Theories</b>
 A. Smith, J. Knolle, R. Moessner, and D. L. Kovrizhin,
