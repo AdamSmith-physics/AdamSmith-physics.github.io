@@ -27,7 +27,7 @@ abstract = "The abstract. Markdown and math can be used (note that math may requ
 abstract_short = "A short version of the abstract."
 
 # Featured image thumbnail (optional)
-image_preview = ""
+#image_preview = ""
 
 # Is this a selected publication? (true/false)
 selected = true
