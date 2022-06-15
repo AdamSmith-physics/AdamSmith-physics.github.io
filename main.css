@@ -19,7 +19,7 @@ li {
 }
 
 .light-theme {
-    --bg: var(--green);
+    --bg: var(--white);
     --fontColor: var(--black);
     --btnBg: var(--black);
     --btnFontColor: var(--white);
@@ -95,7 +95,7 @@ li {
 
 /* Main content */
 .main {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -103,6 +103,47 @@ li {
     margin-top: 70px; /* Add a top margin to avoid content overlay */
     padding-right: 20px;
     padding-left: 20px;
+}
+
+.header {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px;
+}
+
+.nameUnderline {
+    width: 200px;
+    border: 3px solid;
+    color: var(--fontColor);
+}
+
+.slimColumnLeft {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 20px;
+    width: 30%;
+}
+
+.wideColumnRight {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 20px;
+    width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). 
