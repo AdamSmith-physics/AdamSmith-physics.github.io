@@ -62,7 +62,7 @@ li {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -95,7 +95,14 @@ li {
 
 /* Main content */
 .main {
-    margin-top: 60px; /* Add a top margin to avoid content overlay */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container {
+    margin-top: 70px; /* Add a top margin to avoid content overlay */
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). 
