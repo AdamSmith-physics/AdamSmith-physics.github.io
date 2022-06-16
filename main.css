@@ -196,10 +196,12 @@ Show the link that contains should open and close the topnav (.icon) */
         max-width: 228px;
         float: none;
         margin: 0 auto;
+        padding-right: 0;
     }
 
     .wideColumnRight {
         width: 100%;
+        padding-left: 0;
     }
 
 
