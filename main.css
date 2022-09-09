@@ -19,6 +19,16 @@ li {
     list-style: circle;
 }
 
+h2 {
+    color: var(--themeColour);
+    font-family: "Montserrat", Helvetica;
+}
+
+h3 {
+    color: var(--themeColour);
+    font-family: "Montserrat", Helvetica;
+}
+
 .list {
     list-style: square;
 }
