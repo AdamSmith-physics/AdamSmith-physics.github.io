@@ -224,13 +224,27 @@ Show the link that contains should open and close the topnav (.icon) */
         width: 100%;
         max-width: 228px;
         float: none;
-        margin: 0 auto;
+        margin: 20px auto;
         padding-right: 0;
+    }
+
+    .slimColumnRight {
+        width: 100%;
+        max-width: 300px;
+        float: none;
+        margin: 0px auto;
+        padding-left: 0;
     }
 
     .wideColumnRight {
         width: 100%;
         padding-left: 0;
+    }
+
+    .wideColumnLeft {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
     }
 
 
