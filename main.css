@@ -230,21 +230,29 @@ Show the link that contains should open and close the topnav (.icon) */
 
     .slimColumnRight {
         width: 100%;
-        max-width: 300px;
+        max-width: 228px;
         float: none;
-        margin: 0px auto;
+        margin: 0 auto;
         padding-left: 0;
     }
 
     .wideColumnRight {
         width: 100%;
+        float: none;
         padding-left: 0;
     }
 
     .wideColumnLeft {
         width: 100%;
+        float: none;
         padding-right: 0;
-        margin-bottom: 20px;
+    }
+
+    .container {
+        margin-top: 70px; /* Add a top margin to avoid content overlay */
+        margin-bottom: 100px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
 
