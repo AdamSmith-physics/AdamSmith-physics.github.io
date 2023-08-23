@@ -1,3 +1,6 @@
+from content.arXiv import updateArxiv
+
+updateArxiv(directory="content/")
 
 header_file = open("content/header.html", "r")
 
