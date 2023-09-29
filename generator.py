@@ -1,6 +1,6 @@
 from content.arXiv import updateArxiv
 
-updateArxiv(directory="content/")
+#updateArxiv(directory="content/")
 
 header_file = open("content/header.html", "r")
 
@@ -16,7 +16,8 @@ footer_file.close()
 pages = [["index", "Home"], 
          ["research", "Research"], 
          ["publications", "Publications"], 
-         ["group", "Group"], 
+         ["group", "Group"],
+         ["join", "Join Us"], 
          ["cirquit", "CirQuit"]]
 
 for page in pages:
