@@ -26,7 +26,7 @@ def updateArxiv(directory = ""):
     
     paper_list = open(directory+"papers.txt", "r")
 
-    with open(directory+"publications.html", "a") as publications:
+    with open(directory+"publications.html", "a", encoding="utf-8") as publications:
         for arXiv_id in paper_list:
 
             clean_id = arXiv_id.replace("\n", "")
@@ -65,7 +65,9 @@ def updateArxiv(directory = ""):
                 print(journal)
                 print(doi)
 
-        publications.write('<br>\n')
+        publications.write("<br>\n")
+
+    print("ArXiv updated!")
 
 if __name__ == "__main__":
     updateArxiv()

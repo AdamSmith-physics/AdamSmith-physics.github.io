@@ -22,15 +22,17 @@ pages = [["index", "Home"],
 
 for page in pages:
 
+    print("Compiling " + page[0] + ".html")
+
     # Add the header
-    newFile = open(f"{page[0]}.html", "w")
+    newFile = open(f"{page[0]}.html", "w", encoding="utf-8")
 
     newFile.write(header)
 
     newFile.close()
 
     # add the navigation bar
-    newFile = open(f"{page[0]}.html", "a")
+    newFile = open(f"{page[0]}.html", "a", encoding="utf-8")
 
     for link in pages:
         if link[0] == page[0]:
@@ -48,7 +50,7 @@ for page in pages:
     #newFile.write(content.read())
     #content.close()
 
-    with open(f"content/{page[0]}.html", "r") as content:
+    with open(f"content/{page[0]}.html", "r", encoding="utf-8") as content:
         for line in content:
             newFile.write("\t\t\t" + line)
 
