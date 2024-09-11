@@ -5,6 +5,7 @@
     --darkGrey: #2c3537;
     --lightGrey: #5f7379;
     --faintGrey: #b9d0d7;
+    --transparentFaintGrey: hsla(194, 27%, 78%, 0.949);
     --themeColour: #007ca7;
 }
 
