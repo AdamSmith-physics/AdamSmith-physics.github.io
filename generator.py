@@ -17,8 +17,8 @@ pages = [["index", "Home"],
          ["research", "Research"], 
          ["publications", "Publications"], 
          ["group", "Group"],
-         ["join", "Join Us"], 
-         ["cirquit", "CirQuit"]]
+         ["join", "Join Us"]] 
+         #["cirquit", "CirQuit"]]
 
 for page in pages:
 
@@ -34,11 +34,12 @@ for page in pages:
     # add the navigation bar
     newFile = open(f"{page[0]}.html", "a", encoding="utf-8")
 
+    newFile.write('\n')
     for link in pages:
         if link[0] == page[0]:
-            newFile.write(f'<a href="{link[0]}.html" class="active">{link[1]}</a>\n')
+            newFile.write(f'\t\t\t<a href="{link[0]}.html" class="active">{link[1]}</a>\n')
         else:
-            newFile.write(f'<a href="{link[0]}.html">{link[1]}</a>\n')
+            newFile.write(f'\t\t\t<a href="{link[0]}.html">{link[1]}</a>\n')
 
     newFile.write('\t\t</div>\n')
     newFile.write('\t</div>\n\n')
