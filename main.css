@@ -9,11 +9,17 @@
     --themeColour: #007ca7;
 }
 
+html {
+  /* Replace '100px' with the height of your menu bar */
+  scroll-padding-top: 50px; 
+}
+
 body {
     background: var(--bg);
     color: var(--fontColor);
     font-family: "Montserrat", Helvetica;
     font-size: 12pt;
+    line-height: 1.4;
 }
 
 li {
