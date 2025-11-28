@@ -3,135 +3,156 @@
     <hr class="nameUnderline">
 </div>
 
+
+
 <div class="row">
+
+    I am interested in many-body quantum physics and the techniques we can use to understand it. My research spans a variety of topics, which can be broadly categorised into the following areas:
+    <!-- <ul>
+        <li><a href="#many_body_quantum_dynamics">Many-Body Quantum Dynamics</a></li>
+        <li><a href="#quantum_computers">Quantum Computers</a></li>
+        <li><a href="#topological_order">Topological order</a></li>
+    </ul> -->
+
+    <div class="button-row">
+        <a class = "nav-btn" href="#many_body_quantum_dynamics">Many-Body Quantum Dynamics</a>
+    
+        <a class = "nav-btn" href="#quantum_computers">Quantum Computers</a>
+    
+        <a class = "nav-btn" href="#topological_order">Topological Order</a>
+    </div>
+    
+    
+    These topics are strongly interconnected, and I often work at their intersections. Below I give a brief overview of my research in these ares. For more details please see my <a href="publications.html">publications page</a>.
+
+</div>
+<br>
+<hr class="divider">
+
+
+<div id="many_body_quantum_dynamics" class="row">
+    <div class="wideColumnLeft">
+        <h2>Many-Body Quantum Dynamics</h2>
+
+        <p>
+        My core research interest is the dynamics of many-body quantum systems, particularly far-from-equilibrium. These systems are notoriously difficult to study theoretically due to the exponential growth of the Hilbert space with system size, and the polynomial growth of entanglement entropy with time. This makes numerical simulations using classical computers extremely challenging. My research in this area focuses on developing new methods and algorithms to simulate these dynamics, as well as understanding the fundamental physics that governs them.
+        </p>
+
+        <p>
+        A natural language for describing many-body quantum systems is that of tensor networks. These provide an efficient representation of quantum states with limited entanglement, and have been successfully used to study ground states and many-body dynamics. They are also a natural framework for describing quantum circuits. I have been developing new quantum and classical algorithms for simulating many-body quantum dynamics using tensor network methods. I am increasingly interested in the entanglement and correlation structure of different classes of quantum circuits, as well as open quantum dynamics facilitated by measurement and feedback in quantum computers.  
+        </p>
+
+        <div class="button-wrapper">
+            <a href="#top" class="nav-btn">Back to Top</a>
+        </div>
+
+    </div>
+    <div class="slimColumnRight">
+        <br>
+        <img src="images/LGT_dynamics.png" alt="LGT dynamics">
+        <img src="images/anyon_dynamics.png" alt="anyon dynamics">
+    </div>
+
+    
+
+</div>
+<br>
+<hr class="divider">
+
+
+<div id="quantum_computers" class="row">
     <div class="wideColumnLeft">
         <h2>Quantum Computers</h2>
 
-        <h3>Digital Simulation of Topological Systems</h3>
-        Using digital quantum computers based on qubits and gates, we have introduced methods for realising and studying topological systems. This includes the largest scale implementation of the toric code on Google's sycamore chip [1]. We additionally measure several topological properties of the system and its excitations and propose generalisations beyond the toric code [2]. We have also proposed methods for studying symmetry protected topological phases across a phase transition in [3]. 
+        <p>
+        I am very interested in the use of quantum computers for simulating many-body quantum systems. These precisely controlled and isolated quantum devices are potentially ideal platforms for simulating quantum systems. Moreover, studying quantum many-body physics may be one of the few applications of quantum computers that can provide a genuine quantum advantage over classical computers before large-scale, fault-tolerant quantum computing is achieved. There is currently exciting and rapid progress in the development of quantum computers using a range of technologies. With that said, as of yet there has been no clear demonstration of this advantage. However, this effort has been providing a deeper understanding of quantum many-body systems as well as the classical and quantum algorithms that can be used to study them.
+        </p>
 
-        <h3>Digital Simulation of Many-Body Dynamics</h3>
-        I have been working with the state-of-the-art IBM quantum computers to simulate far-from-equilibrium quantum dynamics [4,5]. These types of simulations generally require computation resources that scale exponentially in system size. This is problematic even for the worlds most powerful classical supercomputers, which can tackle at most ~50 spins (qubits). Quantum computers may provide a way to directly simulate this quantum dynamics with physical resources scaling only linearly with system size, an exponential improvement! Our work investigates the capabilities and limitations of using current and near-term quantum computers for this purpose.
+        <p>
+        My research in this area takes several directions. I am have been fortunate to collaborate with Google Quantum AI and IBM (through Samsung) to perform experiments on their state-of-the-art quantum computers. This has allowed us to study various aspect of quantum state preparation, simulation of non-equilibrium dynamics, and the realisation of topological phases of matter on these devices. In addition to these experimental efforts, I am also interested in developing new algorithms and methods for simulating many-body quantum systems on quantum computers, particularly inspired by tensor network methods. I have also explored the possibilities of using current quantum computers for analogue simulations of time-dependent Hamiltonians by directly controlling the microwave pulses that manipulate superconducting qubits.
+        </p>
 
-        <h3>Analogue Simulation of Time-Dependent Hamiltonians</h3>
-        Motivated by the access offered by IBM to the low level microwave pulse control of their quantum computers, I am investigating the possibilities of using these devices for analogue simulations. By controlling the microwave pulses directly it is possible to realise time-dependent Hamiltonians for a single qubit and coupling arrays of qubits. As a first step, Daniel Malz and I performed an experiment where we drove a single superconducting qubit with two incommensurate frequencies [6]. This experiment followed an earlier proposal and confirmed the presence of a temporal topological band structure. We were able to accurately extract the quantised Chern number that characterises the different topological phases.
+        <div class="button-wrapper">
+            <a href="#top" class="nav-btn">Back to Top</a>
+        </div>
+
     </div>
-
     <div class="slimColumnRight">
         <br>
-        <img src="images/FisherInformation.png" alt="fisher information">
-        <img src="images/toricCode.png" alt="toric code">
-        <img src="images/chernNumber.png" alt="chern number">
-        <p><small>
-            <b>Top</b>: The quantum Fisher information for a spin-chain as computed by an IBM quantum computer, compared with classical numerics and the von Neumann entanglement entropy [5].
-            <b>Middle</b>: The measured parity values of the toric code state prepared in [1].
-            <b>Bottom</b> The Chern number extracted from a quasi-periodically driven superconducting qubit [6].
-        </small>
-        </p>
+        <img src="images/uniform_qmps.png" alt="uniform qmps">
+        <img src="images/unitary_games.png" alt="unitary games">
     </div>
 </div>
 
+<!--
 <div class="row">
-<p><small>
-    [1] Realizing topologically ordered states on a quantum processor. K. J. Satzinger, Y. Liu, A. Smith, C. Knapp, et al.  Science, 374, 6572, (1242-1247), (2021). [arXiv:2104.01180] <br>
-    [2] Methods for simulating string-net states and anyons on a digital quantum computer. Yu-Jie Liu, Kirill Shtengel, Adam Smith, Frank Pollmann. [arXiv:2110.02020] <br>
-    [3] Crossing a topological phase transition with a quantum computer. Adam Smith, Bernhard Jobst, Andrew G. Green, Frank Pollmann. [arXiv:1910.05351] <br>
-    [4] Real- and imaginary-time evolution with compressed quantum circuits. Sheng-Hsuan Lin, Rohit Dilip, Andrew G. Green, Adam Smith, Frank Pollmann. PRX Quantum 2, 010342 (2021). [arXiv:2008.10322] <br>
-    [5] Simulating quantum many-body dynamics on a current digital quantum computer. Adam Smith, M. S. Kim, Frank Pollmann, Johannes Knolle. npj Quantum Information, 5, 106 (2019)  [arXiv:1906.06343] <br>
-    [6] Topological two-dimensional Floquet lattice on a single superconducting qubit. Daniel Malz, Adam Smith. Phys. Rev. Lett. 126, 163602 (2021). [arXiv:2012.01459] <br>
-</small></p>
+    <h3>Selected Publications</h3>
+    <ul>
+        <li><a href="https://arxiv.org/abs/2510.07023">Simulating Topological Order on Quantum Processors</a> </li>
+        <li><a href="https://doi.org/10.1038/s41586-025-09456-3">Probing non-equilibrium topological order on a quantum processor</a> </li>
+        <li><a href="https://doi.org/10.1038/s41586-025-08999-9">Visualizing Dynamics of Charges and Strings in (2+1)D Lattice Gauge Theories</a> </li>
+        <li><a href="https://doi.org/10.1103/PhysRevResearch.7.043018">A recipe for local simulation of strongly-correlated fermionic matter on quantum computers: the 2D Fermi-Hubbard model</a> </li>
+        <li><a href="https://doi.org/10.1103/PhysRevResearch.6.033062">Scalable simulation of non-equilibrium quantum dynamics via classically optimised unitary circuits</a> </li>
+        <li><a href="https://doi.org/10.22331/q-2024-02-22-1263">Analogue Quantum Simulation with Fixed-Frequency Transmon Qubits</a> </li>
+        <li><a href="https://doi.org/10.1103/PhysRevResearch.5.033187">Time Evolution of Uniform Sequential Circuits</a> </li>
+        <li><a href="https://doi.org/10.1126/science.abi8378">Realizing topologically ordered states on a quantum processor</a> </li>
+    </ul>
 </div>
+-->
+
 <br>
+<hr class="divider">
 
-<!---->
-
-<div class="row">
+<div id="topological_order" class="row">
     <div class="wideColumnLeft">
-        <h2>Sign-Problems in Topological Phases</h2>
+        <h2>Topological Order</h2>
 
-        Monte Carlo methods are some of our most powerful numerical methods for understanding phases of matter. However, when we try to use them to study quantum systems, we typically find that there is an obstruction that makes the computation prohibitively expensive -- the so-called sign problem.
-        Recently we have proven that many topological phases of matter have intrinsic sign problems [1,2]. These are fundamental properties of the phases and cannot be avoided. We prove this by relating the topological information, contained in the S and T matrices, to the presence of a sign problems. We prove that a wide range of topological phases of matter, including chiral and non-abelian phases for both bosons and fermions have these intrinsic sign problems. This work provides a deeper insight into the complexity of these phases of matter, some of which may be used for quantum computations beyond the reach of our current computers.
+        <p>
+        The conventional Landau paradigm classifies phases of matter through symmetry breaking and associated local order parameters. However, this framework fails to capture a broad class of phases known as topological phases, which are not characterized by local order but instead by non-local entanglement and global topological features. These phases exhibit exotic properties such as anyonic excitations and robust ground state degeneracy, making them of great interest for both fundamental physics and potential applications in quantum computing.
+        </p>
+
+        <p>
+        My research has recently focused on effective models of itinerant anyons, which are emergent quasiparticles in certain topological phatses that exhibit non-trivial braiding statistics. We have introduced tight-binding models for these anyons, and introduced numerical techniques to explore their phase diagrams and dynamics. I am also interested in how to use quantum computers to simulate and study topological phases of matter. My recent work has involved the realisation of the non-equilibrium topological order on a quantum processor. 
+        </p>
+
+        <div class="button-wrapper">
+            <a href="#top" class="nav-btn">Back to Top</a>
+        </div>
+
     </div>
 
     <div class="slimColumnRight">
         <br>
         <img src="images/dehnTwists.png" alt="dehn twists">
-        <p><small>
-            The modular transformations on the torus that allow us to extract the topological information contained in the S and T matrix. By related properties of these matrices to conditions of having a sign problem we prove the presence of irremovable, intrinsic sign problems for many topological phases [1,2].
-        </small>
-        </p>
+        <img src="images/toricCode.png" alt="toric code">
     </div>
 </div>
 
+<!--
 <div class="row">
-<p><small>
-    [1] Intrinsic Sign Problems in Topological Quantum Field Theories. Adam Smith, Omri Golan, Zohar Ringel. Phys. Rev. Research 2, 033515 (2020) [arXiv:2005.05343] <br>
-    [2] Intrinsic sign problem in fermionic and bosonic chiral topological matter. Omri Golan, Adam Smith, Zohar Ringel. Phys. Rev. Research 2, 043032 (2020) [arXiv:2005.05566] <br>
-</small></p>
+    <h3>Selected Publications</h3>
+    <ul>
+        <li><a href="https://arxiv.org/abs/2510.07023">Simulating Topological Order on Quantum Processors</a> </li>
+        <li><a href="https://arxiv.org/abs/2507.22115">Phases of Interacting Fibonacci Anyons on a Ladder at Half-Filling</a> </li>
+        <li><a href="https://doi.org/10.1038/s41586-025-09456-3">Probing non-equilibrium topological order on a quantum processor</a> </li>
+        <li><a href="https://doi.org/10.1103/PhysRevB.107.195129">Numerical simulation of non-abelian anyons</a> </li>
+        <li><a href="https://doi.org/10.1103/PRXQuantum.3.040315">Methods for simulating string-net states and anyons on a digital quantum computer</a> </li>
+        <li><a href="https://doi.org/10.1126/science.abi8378">Realizing topologically ordered states on a quantum processor</a> </li>
+        <li><a href="https://doi.org/10.1103/PhysRevResearch.2.033515">Intrinsic sign problems in topological quantum field theories</a> </li>
+        <li><a href="https://doi.org/10.1103/PhysRevResearch.4.L022020">Crossing a topological phase transition with a quantum computer</a> </li>
+    </ul>
+
 </div>
+-->
+
 <br>
+<hr class="divider">
 
-<!---->
+<!-- <button onclick="topFunction()" id="backToTopBtn" title="Go to top">Top</button> -->
 
-<div class="row">
-    <div class="wideColumnLeft">
-        <h2>Disorder-Free Localization</h2>
 
-        Localization is the fundamental phenomenon in condensed matter physics. It is the spatial localization of itinerant electrons (or other d.o.f.) in the presence of disorder. This leads to an insulating material due to the lack of charge transport. More importantly, isolated localized systems do not thermalize and local information is preserved at all times. In our work we answer a long-standing question about localized systems and demonstrate for the first time that localization can occur without disorder, through interactions alone [1-4]. The model that we introduce is an example of a lattice gauge theory, which are ubiquitous in the theoretical description of strongly-correlated condensed matter. Our model is, for instance, closely related to the Hubbard and Falicov-Kimball models, and the toric code. Using current technologies in ultracold atom optical lattice experiments, we also proposed an experimental realisation of our model and its dynamical simulation [5].
-    </div>
 
-    <div class="slimColumnRight">
-        <br>
-        <img src="images/domainWall.png" alt="domain wall">
-        <p><small>
-            The limited spreading of an initial domain wall in a model of disorder-free localization [1]
-        </small>
-        </p>
-    </div>
-</div>
 
-<div class="row">
-<p><small>
-    [1] Disorder-Free Localization. Adam Smith, Johannes Knolle, Dmitry L. Kovrizhin, Roderich Moessner. Phys. Rev. Lett. 118, 266601 (2017). [arXiv:1701.04748] <br>
-    [2] Dynamical localization in Z2 lattice gauge theories. Adam Smith, Johannes Knolle, Roderich Moessner, Dmitry L. Kovrizhin. Phys. Rev. B 97, 245137 (2018) [arXiv:1803.06574] <br>
-    [3] Absence of Ergodicity without Quenched Disorder: From Quantum Disentangled Liquids to Many-Body Localization. Adam Smith, Johannes Knolle, Roderich Moessner, Dmitry L. Kovrizhin. Phys. Rev. Lett. 119, 176601 (2017). [arXiv:1705.09143] <br>
-    [4] Logarithmic spreading of out-of-time-ordered correlators without many-body localization. Adam Smith, Johannes Knolle, Roderich Moessner, Dmitry L. Kovrizhin. (2018 preprint) [arXiv:1812.07981] <br>
-    [5] Dynamics of a lattice gauge theory with fermionic matter — minimal quantum simulator with time-dependent impurities in ultracold gases. Adam Smith, Dmitry L. Kovrizhin, Roderich Moessner, Johannes Knolle. Quantum Sci. Technol. 3, 044003 (2018). [arXiv:1803.06575] <br>
-</small></p>
-</div>
-<br>
 
-<!---->
-
-<div class="row">
-    <div class="wideColumnLeft">
-        <h2>Spectroscopy of Three-Dimensional Kitaev Spin Liquids</h2>
-
-        <p>
-        Spectroscopic experimental techniques such as inelastic neutron scattering (INS), are powerful methods for understanding the magnetic properties of a material. Quantum spin liquids (QSLs) are a particularly interesting phase magnetic phase of matter that do not order at zero temperature. QSLs are topological phases of matter and typically have exotic fractionalised excitations, unlike the normal fermions and bosons. However, this lack of order is also responsible for difficulty in measuring and characterising them, and so it's important to develop a theoretical understanding of the dynamical properties of these materials that are probed through INS. 
-        </p>
-        <p>
-        Alexei Kitaev proposed a simple, soluble model on a honeycomb lattice [1] which realises a quantum spin and that is closely related to some real materials, such as alpha-RuCl, and Li2IrO3. Using an exact method for computing the dynamical structure factor (probed in INS), which was developed by Knolle et al[2] for the honeycomb model, we study a range of three-dimensional generalisations [3,4]. These models, particularly on the hyperhoneycomb lattice, are also of relevance to Iridate compounds, such as gamma-Li2IrO3, that has been experimentally synthesised.
-        </p>
-    </div>
-
-    <div class="slimColumnRight">
-        <br>
-        <img src="images/brillouinZone.png" alt="Brillouin zone">
-        <p><small>
-            The dynamical structure factor across the Brillouin zone of the hyperhoneycomb lattice [3]
-        </small>
-        </p>
-    </div>
-</div>
-
-<div class="row">
-<p><small>
-    [1] Anyons in an exactly solved model and beyond. Alexei Kitaev Annals of Physics 321, 1, 2-111 (2006) <br>
-    [2] Dynamics of a two-dimensional quantum spin liquid: signatures of emergent Majorana fermions and fluxes. J. Knolle, D. L. Kovrizhin, J. T. Chalker, and R. Moessner Phys. Rev. Lett. 112, 207203 (2014) <br>
-    [3] Majorana spectroscopy of three-dimensional Kitaev spin liquids. Adam Smith, Johannes Knolle, Dmitry L. Kovrizhin, John T. Chalker, Roderich Moessner. Phys. Rev. B 93, 235146 (2016). [arXiv:1604.05199] <br>
-    [4] Neutron scattering signatures of the 3D hyperhoneycomb Kitaev quantum spin liquid. Adam Smith, Johannes Knolle, Dmitry L. Kovrizhin, John T. Chalker, Roderich Moessner. Phys. Rev. B 92, 180408 (2015). [arXiv:1508.05324] <br>
-</small></p>
-</div>
 <br>
 

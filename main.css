@@ -9,11 +9,18 @@
     --themeColour: #007ca7;
 }
 
+html {
+  /* Replace '100px' with the height of your menu bar */
+  scroll-padding-top: 50px; 
+  scroll-behavior: smooth;
+}
+
 body {
     background: var(--bg);
     color: var(--fontColor);
     font-family: "Montserrat", Helvetica;
     font-size: 12pt;
+    line-height: 1.4;
 }
 
 li {
@@ -65,7 +72,7 @@ small {
     color: var(--btnFontColor);
     background-color: var(--btnBg);
     z-index: 1;
-}
+} 
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -156,6 +163,12 @@ small {
 .nameUnderline {
     width: 160px;
     border: 2px solid;
+    color: var(--themeColour);
+}
+
+.divider {
+    width: 320px;
+    border: 1px solid;
     color: var(--themeColour);
 }
 
@@ -279,4 +292,45 @@ Show the link that contains should open and close the topnav (.icon) */
         display: block;
         text-align: center;
     }
+}
+
+
+
+/* --- THE CONTAINER (The Row) --- */
+.button-row {
+    display: flex;              /* Activates the flexible layout */
+    justify-content: space-between; /* Pushes buttons to edges, equal space in middle */
+    gap: 20px;                  /* Ensures they don't touch on small screens */
+    margin-top: 15px;           /* Space above the whole row */
+    margin-bottom: 15px;        /* Space below the whole row */
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.nav-btn {
+    display: inline-block;
+    text-align: center;
+    background-color: var(--faintGrey);
+    color: var(--themeColour);
+    padding: 6px 8px; 
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: var(--lightGrey);
+    color: white;
+}
+
+/* --- THE WRAPPER (This fixes the "on top of text" issue) --- */
+.button-wrapper {
+    display: block;          /* Forces a new line */
+    text-align: left;       /* Pushes the button to the right */
+    margin-top: 5px;        /* Breathing room above */
+    margin-bottom: 5px;     /* Breathing room below */
+    clear: both;             /* Ensures it stays away from floating columns */
 }
